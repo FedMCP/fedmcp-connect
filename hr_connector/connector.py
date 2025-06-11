@@ -8,7 +8,6 @@ from __future__ import annotations
 import os
 from datetime import datetime
 
-import httpx
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
