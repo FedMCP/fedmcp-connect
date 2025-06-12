@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+fmcpx/__init__.py
+fmcpx/__main__.py
+fmcpx.egg-info/PKG-INFO
+fmcpx.egg-info/SOURCES.txt
+fmcpx.egg-info/dependency_links.txt
+fmcpx.egg-info/entry_points.txt
+fmcpx.egg-info/requires.txt
+fmcpx.egg-info/top_level.txt
+fmcpx/templates/basic/connector.py
+tests/test_cli.py

@@ -1,4 +1,4 @@
-#!/Users/lance/Projects/fedmcp-connect/.venv/bin/python3.11
+#!/Users/lance/Projects/fedmcp-connect/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

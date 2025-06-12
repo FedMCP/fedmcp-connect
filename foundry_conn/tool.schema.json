@@ -1,0 +1,32 @@
+{
+  "name": "foundry_query",
+  "description": "Run a Palantir Foundry GraphQL query",
+  "version": "0.1",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "query":    { "type": "string",  "description": "GraphQL query string" },
+      "variables":{ "type": "object",  "description": "GraphQL variables" }
+    },
+    "required": ["query"]
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "object",
+        "description": "GraphQL response data returned by Foundry"
+      },
+      "requestId": {
+        "type": "string",
+        "description": "Opaque request identifier from Foundry"
+      }
+    },
+    "required": ["data", "requestId"]
+  },
+  "compliance": {
+    "pii_handling": true,
+    "audit_log": true,
+    "fedramp_level": "high"
+  }
+}

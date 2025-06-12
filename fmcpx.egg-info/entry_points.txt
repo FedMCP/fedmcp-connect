@@ -1,0 +1,2 @@
+[console_scripts]
+fmcpx = fmcpx.__main__:app

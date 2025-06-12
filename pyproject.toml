@@ -1,0 +1,26 @@
+# pyproject.toml  (repo root)
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fmcpx"
+version = "0.0.0.dev0"
+description = "FedMCP connector toolkit (CLI scaffolder)"
+authors = [{ name = "Peregrine / FedMCP", email = "oss@fedmcp.org" }]
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.9.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+fmcpx = "fmcpx.__main__:app"
+
+[tool.setuptools]
+packages = { find = { include = ["fmcpx*"], exclude = ["demo_connector*", "hr_connector*"] } }
